@@ -1,8 +1,25 @@
+@media only screen and(max-width: 750px) {
+	.logo p {
+		color: red;
+	}
+	/*.top {
+		grid-template-areas: ". logo ." "nav1 nav1 nav1" "nav2 nav2 nav2" "nav3 nav3 nav3" "nav4 nav4 nav4" ". . ." ". cap cap" ". cap cap";
+
+		"logo nav1 nav2 nav3 nav4" ".  .  .  .  ." ".  . . .  ." ".  cap  cap  cap  ." ".  cap  cap  cap  ."
+	}
+	body {
+		background-color: aqua;
+	}*/
+}
+
+
 * {
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
 }
+
+
 
 body {
 	background-color: #2B323C;
@@ -179,6 +196,8 @@ h2 {
 .footer p > a {
 	color: #8E3035;
 }
+
+
 
 /*hover animation* snippet
 
