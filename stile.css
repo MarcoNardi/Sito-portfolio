@@ -15,7 +15,7 @@ h1 {
 .grid {
 	display: grid;
 
-	grid-template-rows: minmax(700px, auto) 1fr 1fr;
+	grid-template-rows: minmax(700px, auto) 1fr 300px;
 	height: 100%;
 	/*grid-template-areas: "head    head  	 head 	 head" "head  	 head 	 head 	 head" "head  	 head 	 head 	 head" "content content content content" "footer footer footer footer";*/
 }
@@ -113,8 +113,16 @@ h1 {
 
 .main-section {
 	padding-top: 2%;
-	padding-left: 15%;
-	padding-right: 15%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.titolo > h3 {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	text-align: center;
+	color: #D1D1D1;
+
 }
 
 h2 {
@@ -124,8 +132,24 @@ h2 {
 
 .boxes {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	grid-gap: 30px;
+}
+
+.box {
+	background-color: #D1D1D1;
+	box-shadow: 2px 3px 5px rgba(100, 100, 100, 0.8);
+	text-align: center;
+	padding: 1rem 1rem;
+	font-size: 2rem;
+}
+
+.box * {
+	padding: 10px;
+}
+
+.icon-big {
+	font-size: 5rem !important;
 }
 
 /*hover animation* snippet
