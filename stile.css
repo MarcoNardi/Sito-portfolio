@@ -5,9 +5,12 @@
 }
 
 body {
-	background-color: #343434;
+	background-color: #2B323C;
 }
 
+h1 {
+	font-family: "Open Sans"
+}
 
 .grid {
 	display: grid;
@@ -26,10 +29,10 @@ body {
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 100%), url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&w=1000&q=80);
 
 	grid-template-areas: "logo nav1 nav2 nav3 nav4" ".  .  .  .  ." ".  . . .  ." ".  cap  cap  cap  ." ".  cap  cap  cap  .";
-	background-position: left;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	grid-gap: 20px;
+	grid-gap: 10px;
 }
 
 .top * {
@@ -39,9 +42,38 @@ body {
 
 .top a {
 	text-decoration: none;
-	color: white;
+	color: #ddd;
 	display: block;
 	justify-self: center;
+	position: relative;
+	transition-property: color;
+	transition-duration: 0.3s;
+
+}
+
+.top a:hover {
+	color: white;
+}
+
+.top a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+.top a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: -5px;
+	left: 0;
+	background-color: white;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
 }
 
 .logo {
@@ -79,8 +111,24 @@ body {
 	text-align: center;
 }
 
+.main-section {
+	padding-top: 2%;
+	padding-left: 15%;
+	padding-right: 15%;
+}
 
-/*hover animation*/
+h2 {
+	font-size: 2rem;
+	color: #D1D1D1;
+}
+
+.boxes {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 30px;
+}
+
+/*hover animation* snippet
 
 a:before {
 	content: "";
@@ -108,3 +156,4 @@ a:hover:before {
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
 }
+*/
