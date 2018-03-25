@@ -14,8 +14,8 @@ h1 {
 
 .grid {
 	display: grid;
-
-	grid-template-rows: minmax(700px, auto) 1fr 300px;
+	grid-gap: 20px;
+	grid-template-rows: minmax(700px, auto) 1fr 200px;
 	height: 100%;
 	/*grid-template-areas: "head    head  	 head 	 head" "head  	 head 	 head 	 head" "head  	 head 	 head 	 head" "content content content content" "footer footer footer footer";*/
 }
@@ -97,9 +97,6 @@ h1 {
 	grid-area: nav4;
 }
 
-.footer {
-	grid-column: 1/-1;
-}
 
 #caption {
 	align-self: center;
@@ -144,12 +141,33 @@ h2 {
 	font-size: 2rem;
 }
 
-.box * {
+.box > p {
 	padding: 10px;
 }
 
+.box a {
+	text-decoration: none;
+	color: #BA2D0B;
+}
+
 .icon-big {
-	font-size: 5rem !important;
+	font-size: 4.5rem !important;
+}
+
+.footer {
+	grid-column: 1/-1;
+	background-color: #072B38;
+}
+
+.footer p {
+	text-align: center;
+	margin-top: 100px;
+	color: #BEE9E8;
+	font-size: 2rem;
+}
+
+.footer p > a {
+	color: #8E3035;
 }
 
 /*hover animation* snippet
