@@ -1,17 +1,16 @@
-@media only screen and(max-width: 750px) {
+@media only screen and (max-width: 767px) {
+	.top {
+		grid-template-areas: ". logo logo" ". nav1 nav1" ". nav2 nav2" ". nav3 nav3" ". nav4 nav4" ". . ." ". cap cap" ". cap cap" !important;
+
+	}
 	.logo p {
-		color: red;
+		text-align: center !important;
 	}
-	/*.top {
-		grid-template-areas: ". logo ." "nav1 nav1 nav1" "nav2 nav2 nav2" "nav3 nav3 nav3" "nav4 nav4 nav4" ". . ." ". cap cap" ". cap cap";
-
-		"logo nav1 nav2 nav3 nav4" ".  .  .  .  ." ".  . . .  ." ".  cap  cap  cap  ." ".  cap  cap  cap  ."
+	.top a,
+	.top p {
+		font-size: 2rem;
 	}
-	body {
-		background-color: aqua;
-	}*/
 }
-
 
 * {
 	margin: 0;
@@ -34,7 +33,6 @@ h1 {
 	grid-gap: 20px;
 	grid-template-rows: minmax(700px, auto) 1fr 200px;
 	height: 100%;
-	/*grid-template-areas: "head    head  	 head 	 head" "head  	 head 	 head 	 head" "head  	 head 	 head 	 head" "content content content content" "footer footer footer footer";*/
 }
 
 .top {
@@ -196,35 +194,3 @@ h2 {
 .footer p > a {
 	color: #8E3035;
 }
-
-
-
-/*hover animation* snippet
-
-a:before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	bottom: -5px;
-	left: 0;
-	background-color: white;
-	visibility: hidden;
-	-webkit-transform: scaleX(0);
-	transform: scaleX(0);
-	-webkit-transition: all 0.3s ease-in-out 0s;
-	transition: all 0.3s ease-in-out 0s;
-}
-
-a {
-	position: relative;
-	color: white;
-	text-decoration: none;
-}
-
-a:hover:before {
-	visibility: visible;
-	-webkit-transform: scaleX(1);
-	transform: scaleX(1);
-}
-*/
