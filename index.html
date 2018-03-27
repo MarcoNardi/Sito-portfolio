@@ -7,61 +7,56 @@
 	<!--google fonts-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 	<style>
-	.main-section {
-		padding-top: 2%;
-		padding-left: 10%;
-		padding-right: 10%;
-	}
+		.boxes {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+			grid-gap: 30px;
+		}
 
-	.titolo > h3 {
-		margin-top: 2rem;
-		margin-bottom: 2rem;
-		text-align: center;
-		color: #D1D1D1;
+		.titolo>h3 {
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+			text-align: center;
+			color: #D1D1D1;
 
-	}
+		}
 
-	h2 {
-		font-size: 2rem;
-		color: #D1D1D1;
-	}
+		.box {
+			background-color: #D1D1D1;
+			box-shadow: 2px 3px 5px rgba(100, 100, 100, 0.8);
+			text-align: center;
+			padding: 1rem 1rem;
+			font-size: 2rem;
+			transition: all 0.3s ease-in-out;
 
-	.boxes {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-		grid-gap: 30px;
-	}
+		}
 
-	.box {
-		background-color: #D1D1D1;
-		box-shadow: 2px 3px 5px rgba(100, 100, 100, 0.8);
-		text-align: center;
-		padding: 1rem 1rem;
-		font-size: 2rem;
-		transition: all 0.3s ease-in-out;
-	
-	}
+		.grow:hover {
+			-webkit-transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			transform: scale(1.1);
 
-	.grow:hover {
-		-webkit-transform: scale(1.1);
-		-ms-transform: scale(1.1);
-		transform: scale(1.1);
-	
-		background-color: #D8DCFF;
-	}
-	
-	.box > p {
-		padding: 10px;
-	}
-	
-	.box a {
-		text-decoration: none;
-		color: #BA2D0B;
-	}
-	
-	.icon-big {
-		font-size: 4.5rem !important;
-	}
+			background-color: #D8DCFF;
+		}
+
+		.box>p {
+			padding: 10px;
+		}
+
+		.box a {
+			text-decoration: none;
+			color: #BA2D0B;
+		}
+
+		.icon-big {
+			font-size: 4.5rem !important;
+		}
+
+		h2 {
+			font-size: 2rem;
+			color: #D1D1D1;
+		}
+
 	</style>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -94,7 +89,7 @@
 			<div class="boxes">
 				<div class="box grow">
 					<i class="fas fa-gamepad icon-big"></i>
-					<a href="https://github.com/MarcoNardi/Sito-portfolio" target="_blank">
+					<a href="https://github.com/MarcoNardi/Memory-game" target="_blank">
 						<h3>Memory</h3>
 					</a>
 					<p>Un gioco fatto in c++</p>

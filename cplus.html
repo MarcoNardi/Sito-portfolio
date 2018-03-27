@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Marco Nardi | c++</title>
+	<!-- font awesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+	<!--google fonts-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="stile.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="grid">
+		<div class="top">
+			<div class="logo">
+				<p>MARCO NARDI</p>
+			</div>
+			<a class="nav1" href="index.html"><i class="fas fa-home"></i> Home</a>
+			<a class="nav2" href="cplus.html"><i class="fas fa-terminal"></i> C++</a>
+			<a class="nav3" href="#"><i class="fas fa-code"></i> Web</a>
+			<a class="nav4" href="#"><i class="fas fa-info-circle"></i> Contact</a>
+			<div id="caption">
+				<h1>Salve! Sono Marco Nardi </h1>
+			</div>
+		</div>
+		<section class="main-section">
+			<div class="titolo">
+				<h2>
+					I miei progetti in c++:
+				</h2>
+			</div>
+			<ul class="project-list">
+				<li>
+					<h3>
+						<a href="https://github.com/MarcoNardi/Memory-game"> Gioco del memory</a>
+					</h3>
+
+					<p>
+						Qesto è un semplice gioco scritto interamente in c++ grazie all'utilizzo di una libreria di terze parti chiamata <a href="https://www.sfml-dev.org/">SFML</a>. SFML viene utilizzata per i suoi moduli grafici e audio, ma il resto del progetto è interatemente da zero. Con questo progetto ho potuto mettere in pratica le mie conoscenze di game design, oop, e standard library.<br/> Lo sviluppo è proseguito nel seguente modo:
+					</p>
+					<ul class="descrizione">
+						<li>
+							<h4>Creazione della classe Game:</h4>
+							<p>La classe game si occupava all'inizio di semplicemente gestire i vari oggetti del gioco (per esempio le carte) ma con l'aggiunta di altri moduli come il Resource manager si occupa anche del caricamento delle risorse (textures suoni ecc..)</p>
+						</li>
+						<li>
+							<h4>Creazione del Resource manager</h4>
+							<p>Il resource manager è un modulo che serve a facilitare il caricamento della varie risorse, ma serve sopratutto a facilitare la condivisione di tali risorse tra oggetti evitando copie inutili grazie all'utilizzo di move semantics e smart pointers. L'implementazione è raggiunta grazie all'utilizzo di <em>std::map</em> che associa ogni risorsa ad un id che si trova all'interno di un enum</p>
+						</li>
+						<li>
+							<h4>Creazione del GameState Manager</h4>
+							<p>
+								Un gamestate è una particolare "istanza" di gioco, cioè per esempio il menù, il livello, le impostazioni ecc...<br/> E per gestire i passaggi da un game state all'altro ho utilizzato una std::stack che permetteva l'utilizzo dello state sulla cima come state attivo.
+							</p>
+						</li>
+						<li>
+							<h4>Implementazione dei vari state</h4>
+							<p>Ho implementato i vari state come il menu, il menu di selezione dei giocatori e il state di gioco</p>
+						</li>
+						<li>
+							<h4>Creazione del livello e dei vari oggetti di gioco</h4>
+							<p>Fino ad ora il mio obbiettivo era di realizzare un framework che mi facilitasse lo sviluppo del gioco e ora, dopo averlo terminato, posso occuparmi del gioco e della logica. Inizio creando le carte e implementando il caricamento delle loro textures e la loro disposizione sul tavolo di gioco. <br>Successivamente mi occupo di Implementare la scoreboard. <br> Poi mi occupo della selezione e del ricevimento dell'input (creando un piccolo input manager) per poter girare le carte. <br> Poi ho implementato un timer per rendere tutto più scorrevole e il sistema di turni
+							</p>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h3>
+						<a href="https://en.wikipedia.org/wiki/Lorem_ipsum"> LOREM</a>
+					</h3>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officia corporis adipisci distinctio aut, blanditiis, ut mollitia facilis earum veniam quidem eaque soluta quos pariatur, asperiores. Explicabo, maxime rem ut excepturi asperiores, debitis consequuntur dolores.
+				</li>
+			</ul>
+		</section>
+		<footer class="footer">
+			<p>Sito fatto da Marco Nardi, codice sorgente <a href="https://github.com/MarcoNardi/Sito-portfolio" target="_blank"> qui</a></p>
+		</footer>
+	</div>
+
+</body>
+
+</html>
