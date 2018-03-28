@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Marco Nardi | web-dev</title>
+	<!-- font awesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+	<!--google fonts-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="stile.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="grid">
+		<div class="top">
+			<div class="logo">
+				<p>MARCO NARDI</p>
+			</div>
+			<a class="nav1" href="index.html"><i class="fas fa-home"></i> Home</a>
+			<a class="nav2" href="cplus.html"><i class="fas fa-terminal"></i> C++</a>
+			<a class="nav3" href="web-dev.html"><i class="fas fa-code"></i> Web</a>
+			<a class="nav4" href="contact.html"><i class="fas fa-info-circle"></i> Contact</a>
+			<div id="caption">
+				<h1>Salve! Sono Marco Nardi </h1>
+			</div>
+		</div>
+		<section class="main-section">
+			<div class="titolo">
+				<h2>
+					I miei progetti web:
+				</h2>
+			</div>
+			<ul class="project-list">
+
+				<li>
+					<h3>
+						<a href="https://marconardi.github.io/">L.B.ALBERTI</a>
+					</h3>
+					<p>Sito fatto con bootstrap 3 per un progetto scolastico dedicato a Leon Battista Alberti. Il sito è completamente responsive e permette una visione ottimale da mobile</p>
+				</li>
+				<li>
+					<h3>
+						<a href="pong/pong.html">PONG IN JS</a>
+					</h3>
+					<p>Piccolo giochino fatto utilizzando puro javascript e l'elemto canvas di html5. L'obbiettivo era testare le mie conoscenze di javascript dato che ha uno stile molto diverso da linguaggi come c++. Per fortuna con ES6 è stat introdotta una sintassi per screare classi molto più canonica e nella mia opinione più semplice. Lo sviluppo è stato diviso nelle seguenti fasi:</p>
+					<ul class="descrizione">
+						<li>
+							<h4>Creazione del canvas e di una classe canvas </h4>
+							<p>Per facilitarne l'utilizzo ho deciso di astrarre l'elemento canvas del DOM inuna classe </p>
+						</li>
+						<li>
+							<h4>Creazione di figure geometriche</h4>
+							<p>Dopo aver letto la documentazione e aver capito come funziona il drawing sul canvas, decido di creare la classe Shape che poi estendo in rettangolo (che userò per fare i due pad) e cerchio (che rappresenta la pallina nel nostro caso).</p>
+						</li>
+						<li>
+							<h4>Creazione di un game loop</h4>
+							<p>finora il gioco e il drawing sono statici quindi implemento un game loop utilizzando il metodo window.requestAnimationFrame() e utilizzando l'oggetto Date implemento un modo per creare un update indipendente dai frame </p>
+						</li>
+						<li>
+							<h4>Creazione di un input manager</h4>
+							<p>Utilizzando gli eventi di javascrpit creo un oggetto ingrado di gestire gli input</p>
+						</li>
+						<li>
+							<h4>
+								Gestione delle collisioni
+							</h4>
+							<p>
+								Con dei semplici calcoli riesco a determinare l'intersezione tra pallina e rettangoli e creo un collision resolver, poi lo implemento anche per i muri. Aggiungo un fattore di accelerazione alla palla e un metodo per aggiornare il punteggio utilizzando due paragrafi nel file html
+							</p>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<footer class="footer">
+			<p>Sito fatto da Marco Nardi, codice sorgente <a href="https://github.com/MarcoNardi/Sito-portfolio" target="_blank"> qui</a></p>
+		</footer>
+	</div>
+
+</body>
+
+</html>
